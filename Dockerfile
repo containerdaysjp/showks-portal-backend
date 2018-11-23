@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 # Bundle app source
 COPY src .
-RUN yarn && yarn build
+RUN yarn
 
 ENV HOST 0.0.0.0
 EXPOSE 8080
